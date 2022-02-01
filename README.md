@@ -21,7 +21,7 @@ It works with react and tested esecially with functional components
         }
 
         const handleHide = () => {
-            console.log('hide or Update button clicked')
+            console.log('Hide or Update button clicked')
         }
 
         return (
