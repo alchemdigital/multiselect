@@ -1,6 +1,6 @@
 {
-  "name": "alchemdigital-multiselect2",
-  "version": "0.0.8",
+  "name": "@alchemdigital/multiselect",
+  "version": "1.0.0",
   "description": "Multiselect Component for input options selection",
   "author": "D.Bairavan",
   "license": "MIT",
@@ -55,5 +55,13 @@
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alchemdigital/multiselect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alchemdigital/multiselect/issues"
+  },
+  "homepage": "https://github.com/alchemdigital/multiselect#readme"
 }
