@@ -9,7 +9,7 @@ It works with react and tested esecially with functional components
 ## How to use
 
 ```js
-    import { Multiselect } from 'alchemdigital-mutiselect'
+    import { Multiselect } from '@alchemdigital/multiselect'
 
     function MyComponent() {
 
