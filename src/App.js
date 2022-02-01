@@ -1,4 +1,3 @@
-import './App.css';
 import { Multiselect } from './lib/index'
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     }
 
     const handleHide = () => {
-        console.log('hide or Update button clicked')
+        console.log('Hide or Update button clicked')
     }
     return (
         <Multiselect
@@ -19,7 +18,7 @@ function App() {
             isMulti={true}
             valueKey="id" //Default value is id
             nameKey="name" //Default value is name
-            title="Select Languages"
+            title="Select Language(s)"
             options={[{ id: 1, name: 'Tamil' }, { id: 2, name: 'English' }]}
             show={true}
             buttonText={'Add / Update'}
@@ -27,4 +26,4 @@ function App() {
     );
 }
 
-export default App;
+export default App
