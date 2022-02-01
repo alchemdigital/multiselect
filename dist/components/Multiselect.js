@@ -9,6 +9,8 @@ require("core-js/modules/web.dom-collections.iterator.js");
 
 var _react = _interopRequireDefault(require("react"));
 
+require("../main.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Multiselect(props) {
