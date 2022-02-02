@@ -20,7 +20,7 @@ function Multiselect(props) {
                     <div className="main-header">
                         <h1>{props.title}</h1>
                         <span className="close-btn" onClick={props.handleHide}>
-                            X
+                        &#10006;
                         </span>
                     </div>
                     <div className="content-container">
