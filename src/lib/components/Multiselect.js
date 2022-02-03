@@ -12,14 +12,15 @@ function Multiselect(props) {
     let labelKey = 'name'
     if (props.labelKey)
         labelKey = props.labelKey
+    console.log(values)
     return (
         <div>
-            { props?.show &&
+            {props?.show &&
                 <>
                     <div className="main-header">
                         <h1>{props.title}</h1>
                         <span className="close-btn" onClick={props.handleHide}>
-                            X
+                        &#10006;
                         </span>
                     </div>
                     <div className="content-container">
@@ -30,17 +31,17 @@ function Multiselect(props) {
                                     props.options.map((option) => (
                                         <li
                                             key={option[valueKey]}
-                                            onClick={(e) => props.handleSelect(option[valueKey], option[labelKey], e)}
-                                            className={values && values?.indexOf(option[valueKey]) !== -1 ? 'list selected' : 'list'}
+                                            onClick={(e) => props.handleSelect(option.value, option.label, e)}
+                                            className={values && values?.indexOf(option.value) !== -1 ? 'list selected' : 'list'}
                                         >
-                                            {option[labelKey]}
+                                            {option.label}
                                         </li>
                                     ))
                                 }
                             </ul>
                             <div className="text-end">
-                                <button onClick={props.handleHide}>
-                                    <span className="update-btn">{props.buttonText}</span>
+                                <button className='update-btn' onClick={props.handleHide}>
+                                    {props.buttonText}
                                 </button>
                             </div>
                         </div>
