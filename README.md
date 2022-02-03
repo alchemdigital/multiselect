@@ -30,19 +30,22 @@ It works with react and tested esecially with functional components
                 handleHide={handleHide}
                 values={[1]} // Selected values to highlight
                 isMulti={true} // Single or Multiple select
-                valueKey="value" // Default is "id"
-                labelKey="label" // Default is "name"
-                title="Select Languages"
+                valueKey="value" // Default value is id
+                labelKey="label" // Default value is name
+                title="Select Language(s)"
                 options={[
                     { value: 1, label: 'Tamil' },
                     { value: 2, label: 'English' }
                 ]}
-                show={true} //Show or Hide
+                show={true} // Show or Hide
                 buttonText={'Add / Update'}
             />
         )
     }
 ```
+
+## Demo output
+![alt text](public/multi.PNG)
 
 ## Support
 

@@ -12,7 +12,6 @@ function Multiselect(props) {
     let labelKey = 'name'
     if (props.labelKey)
         labelKey = props.labelKey
-    console.log(values)
     return (
         <div>
             {props?.show &&
@@ -31,10 +30,10 @@ function Multiselect(props) {
                                     props.options.map((option) => (
                                         <li
                                             key={option[valueKey]}
-                                            onClick={(e) => props.handleSelect(option.value, option.label, e)}
-                                            className={values && values?.indexOf(option.value) !== -1 ? 'list selected' : 'list'}
+                                            onClick={(e) => props.handleSelect(option[valueKey], option[labelKey], e)}
+                                            className={values && values?.indexOf(option[valueKey]) !== -1 ? 'list selected' : 'list'}
                                         >
-                                            {option.label}
+                                            {option[labelKey]}
                                         </li>
                                     ))
                                 }
