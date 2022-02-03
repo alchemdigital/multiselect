@@ -7,9 +7,11 @@ Instead of using dropdown, you can use this component to let the user select sin
 It works with react and tested esecially with functional components
 
 ## How to use
-
+```
+    npm i @alchemdigital/multiselect
+```
 ```js
-    import { Multiselect } from 'alchemdigital-mutiselect'
+    import { Multiselect } from '@alchemdigital/multiselect'
 
     function MyComponent() {
 
@@ -19,7 +21,7 @@ It works with react and tested esecially with functional components
         }
 
         const handleHide = () => {
-            console.log('hide or Update button clicked')
+            console.log('Hide or Update button clicked')
         }
 
         return (
