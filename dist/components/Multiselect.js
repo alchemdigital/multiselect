@@ -25,7 +25,7 @@ function Multiselect(props) {
   }, /*#__PURE__*/_react.default.createElement("h1", null, props.title), /*#__PURE__*/_react.default.createElement("span", {
     className: "close-btn",
     onClick: props.handleHide
-  }, "X")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "\u2716")), /*#__PURE__*/_react.default.createElement("div", {
     className: "content-container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "content-part"
@@ -42,10 +42,9 @@ function Multiselect(props) {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-end"
   }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "update-btn",
     onClick: props.handleHide
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "update-btn"
-  }, props.buttonText)))))));
+  }, props.buttonText))))));
 }
 
 var _default = Multiselect;
